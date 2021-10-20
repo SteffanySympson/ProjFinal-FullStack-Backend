@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 function Connection(url, user, pass, banco){
-    mongoose.connect(`${url}/${banco}`, {
+    mongoose.connect('mongodb+srv://ToDoListAdm:RyWnACqJGwNm2QhX@cluster0.ioeni.mongodb.net/todolist?retryWrites=true&w=majority', {
         user: user,
         pass: pass,
         useNewUrlParser: true,
